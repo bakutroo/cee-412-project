@@ -153,3 +153,26 @@ git commit -m "Comments about what you're sharing"
 git push
 ```
 
+
+## Actually START the project (Checklist)
+
+* Activate virtual environment 
+```
+.\venv\Scripts\activate
+```
+
+* Download appropriate modules (only do this ONCE)
+```
+pip install matplotlib pandas streamlit numpy
+```
+
+* Start the project (this should pop open the window on localhost)
+```
+streamlit run app.py
+```
+* If the above doesn't work, I have had to use the following: (because of the folder you're currently in)
+```
+streamlit run .\app\app.py
+```
+
+NOTE: to stop the app, hold the Ctrl button and press the 'c' key while in the terminal
