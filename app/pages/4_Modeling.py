@@ -39,6 +39,8 @@ clf.fit(X_train, y_train)
 # FEATURE IMPORTANCE
 # ============================================================
 
+# Remove anomaly detection columns if they exist
+
 st.header("Feature Importance")
 
 st.write(
@@ -65,20 +67,12 @@ y_pred = clf.predict(X_test)
 labels = [1, 2, 3, 4, 5]
 cm = confusion_matrix(y_test, y_pred, labels=labels)
 
-fig, ax = plt.subplots()
-sns.heatmap(
-    cm,
-    annot=True,
-    fmt="d",
-    cmap="Blues",
-    ax=ax,
-    xticklabels=labels,
-    yticklabels=labels
-)
-ax.set_xlabel("Predicted Severity")
-ax.set_ylabel("Actual Severity")
-ax.set_title("Confusion Matrix (Severity Levels 1–5)")
-st.pyplot(fig)
+fig, ax = plt.subplots(figsize=(10, 8), dpi=150)
+
+# Convert to a DataFrame for clean formatting
+cm_df = pd.DataFrame(cm, index=labels, columns=labels)
+
+st.code(cm_df.to_string())
 
 st.write(
     "The confusion matrix reveals a strong class imbalance: the model predicts "
@@ -93,7 +87,7 @@ st.write(
 st.header("Classification Report")
 
 report = classification_report(y_test, y_pred)
-st.text(report)
+st.code(report)
 
 st.write(
     "Precision and recall are high for Class 1 but very low for Classes 4–5. "
@@ -148,7 +142,7 @@ logit_model = sm.Logit(y_lr, X_lr)
 result = logit_model.fit()
 
 st.subheader("Logistic Regression Summary")
-st.text(result.summary())
+st.code(result.summary().as_text())
 
 # ============================================================
 # INTERACTION EFFECT: AGE × SEATBELT USE
