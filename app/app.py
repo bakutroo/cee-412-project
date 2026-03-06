@@ -107,6 +107,7 @@ st.write("Created by Hannah Bacon, Audrey Nielsen, Joy Wang, Melissa Williams")
 st.write("Use the sidebar to navigate through the project pages.")
 
 
+
 st.markdown(
     """
     <style>
@@ -128,7 +129,3 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-html, body, [class*="css"] {
-    color: #000000 !important;
-}
