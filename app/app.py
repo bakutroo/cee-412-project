@@ -102,6 +102,6 @@ import matplotlib.pyplot as plt
 #    st.warning("Please select at least one junction.")
 #    st.stop()
 
-st.title("CEE 412 Project: Injury Severity Analysis – SDOT Collisions")
+st.title("CEE 412 Project: Analyzing How Collision and Occupant Attributes Influence Injury Severity – SDOT Collisions")
 st.write("Created by Hannah Bacon, Audrey Nielsen, Joy Wang, Melissa Williams")
 st.write("Use the sidebar to navigate through the project pages.")
