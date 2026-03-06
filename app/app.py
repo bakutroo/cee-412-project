@@ -105,3 +105,29 @@ import matplotlib.pyplot as plt
 st.title("CEE 412 Project: Analyzing How Collision and Occupant Attributes Influence Injury Severity – SDOT Collisions")
 st.write("Created by Hannah Bacon, Audrey Nielsen, Joy Wang, Melissa Williams")
 st.write("Use the sidebar to navigate through the project pages.")
+
+st.markdown(
+    """
+    <style>
+        .stApp {
+            background-color: #ffe6f2; /* light pink */
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <style>
+        .stApp {
+            background-color: #ffe6f2;
+        }
+        section[data-testid="stSidebar"] {
+            background-color: #ffd1e8;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
