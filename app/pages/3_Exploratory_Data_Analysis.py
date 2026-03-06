@@ -6,7 +6,7 @@ import seaborn as sns
 st.title("Exploratory Analysis")
 
 # Load the cleaned EDA dataset
-df_eda = pd.read_csv("data/cleaned_for_eda.csv")
+df_eda = pd.read_csv("app/data/cleaned_for_eda.csv")
 
 # ----------------------------
 # Sidebar Filters (EDA Only)

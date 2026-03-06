@@ -20,7 +20,7 @@ st.write(
 )
 
 # Load model-ready dataset
-df = pd.read_csv("data/cleaned_model_ready.csv")
+df = pd.read_csv("app/data/cleaned_model_ready.csv")
 
 # Split features and target
 X = df.drop(columns=["severity_numeric"])
