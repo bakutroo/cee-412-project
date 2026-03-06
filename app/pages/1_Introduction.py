@@ -12,8 +12,8 @@ non-serious injury, serious injury, died at hospital, dead on arrival,* and *dea
 For analysis, these categories were mapped to a numerical scale ranging from **1 (No Injury)** 
 to **5 (Fatal Injury)**.
 
-The dataset includes demographic factors (such as age), behavioral factors (seatbelt use, 
-distraction indicators), and crash-specific conditions (airbag deployment, ejection status, 
+The dataset includes demographic factors (such as age), behavioral factors (seatbelt use), 
+and crash-specific conditions (airbag deployment, ejection status, 
 and time of day). Text-based categorical variables were cleaned and consolidated into grouped 
 categories (e.g., “Airbag Equipped – Not Activated,” “Seatbelt Used,” “Ejected”) and then 
 encoded numerically for modeling.
@@ -24,7 +24,7 @@ severity but also to understand which attributes contribute most to high-risk ou
 
 ### Hypothesis
 
-Participant-specific factors, such as younger age, lack of seatbelt use, presence of distractions, 
+Participant-specific factors, such as younger age, lack of seatbelt use, 
 and especially ejection from the vehicle, are expected to be positively associated with higher 
 injury severity. Among these, **ejection from the vehicle is hypothesized to have the strongest 
 relationship with severe or fatal injury outcomes**.
