@@ -295,7 +295,7 @@ with tab5:
     "When the airbag is not activated, the probability stays low and almost flat "
     "across all ages. These cases usually involve less severe crashes where the "
     "airbag does not need to deploy."
-    "As well, when the vehicle has no airbag equipped, the predicted probability is also "
+    " As well, when the vehicle has no airbag equipped, the predicted probability is also "
     "low and stable across age, similar to the non‑activated group.\n\n"
     "Overall, the plot shows that higher predicted injury severity is linked to "
     "airbag deployment, not because airbags cause injuries, but because they deploy "
