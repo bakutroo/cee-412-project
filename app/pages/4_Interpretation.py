@@ -191,7 +191,10 @@ with tab4:
 
     st.write(
         "The logistic regression model indicates that seatbelt non-use is the "
-        "strongest predictor of severe injury. Age alone does not significantly affect "
+        "strongest predictor of severe injury. Airbag deployment is also a " 
+        "significant positive predictor, reflecting that crashes severe enough " 
+        " to trigger an airbag are strongly associated with higher injury severity. "
+        " Age alone does not significantly affect "
         "injury severity, and it does not significantly impact the effect of "
         "seatbelt use. The interaction between age and airbag deployment is "
         "statistically significant, suggesting that older individuals "
