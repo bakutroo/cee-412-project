@@ -178,7 +178,9 @@ with tab4:
         "no_seatbelt",
         "airbag_deployed",
         "Age_x_NoSeatbelt",
-        "Age_x_Airbag"
+        "Age_x_Airbag",
+        "Time Group_Off-Peak",
+        "Time Group_Peak Hours"
     ]]
 
     X_lr = sm.add_constant(X_lr).astype(float)
