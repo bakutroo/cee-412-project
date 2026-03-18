@@ -180,7 +180,9 @@ with tab4:
         "Age_x_NoSeatbelt",
         "Age_x_Airbag",
         "Time Group_Off-Peak",
-        "Time Group_Peak Hours"
+        "Time Group_Peak Hours",
+        "Eject Desc_Totally Ejected",
+        "Eject Desc_Partically Ejected"
     ]]
 
     X_lr = sm.add_constant(X_lr).astype(float)
@@ -226,7 +228,9 @@ with tab5:
         "Age_x_NoSeatbelt": ages * 1,
         "Age_x_Airbag": ages * 0,
         "Time Group_Off-Peak": 0,
-        "Time Group_Peak Hours": 0
+        "Time Group_Peak Hours": 0,
+        "Eject Desc_Totally Ejected": 0,
+        "Eject Desc_Partically Ejected": 0
     })
 
     df_yes = pd.DataFrame({
@@ -237,7 +241,9 @@ with tab5:
         "Age_x_NoSeatbelt": ages * 0,
         "Age_x_Airbag": ages * 0,
         "Time Group_Off-Peak": 0,
-        "Time Group_Peak Hours": 0
+        "Time Group_Peak Hours": 0,
+        "Eject Desc_Totally Ejected": 0,
+        "Eject Desc_Partically Ejected": 0
     })
 
     pred_no = result.predict(df_no)
