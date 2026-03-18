@@ -194,17 +194,23 @@ with tab4:
     st.code(result.summary().as_text())
 
     st.write(
-        "The logistic regression model indicates that seatbelt non-use is the "
-        "strongest predictor of severe injury. Airbag deployment is also a "
-        "significant positive predictor, reflecting that crashes severe enough "
-        "to trigger an airbag are strongly associated with higher injury severity. "
-        " Age alone does not significantly affect "
-        "injury severity, and it does not significantly impact the effect of "
-        "seatbelt use. The interaction between age and airbag deployment is "
-        "statistically significant, suggesting that older individuals "
-        "experience higher injury severity in crashes severe enough to "
-        "trigger airbag deployment."
-        )
+    "The logistic regression model shows how each variable influences the probability "
+    "of severe injury. Belted occupants, vehicles without an airbag deployment, and "
+    "nighttime crashes serve as the reference groups. Ejection status is the strongest "
+    "predictor in the model: both total and partial ejection have extremely large, "
+    "highly significant positive coefficients, reflecting the severe forces involved "
+    "when occupants are thrown from the vehicle. Seatbelt non-use is the next strongest "
+    "predictor, consistent with its role in preventing ejection and reducing occupant "
+    "movement during a crash. Airbag deployment also has a substantial positive effect, "
+    "indicating that crashes severe enough to trigger an airbag are strongly associated "
+    "with higher injury severity. Age alone does not significantly affect injury "
+    "severity, and neither the Age × Seatbelt nor Age × Airbag interactions are "
+    "statistically significant in this model. Although the coefficients for "
+    "Age and the Age × Airbag interaction remain positive, their effects are overshadowed "
+    "by stronger predictors—particularly ejection and seatbelt non-use. Both off-peak "
+    "and peak-hour crashes have significantly lower odds of severe injury compared to "
+    "nighttime crashes."
+)
 
 
 # ============================================================
