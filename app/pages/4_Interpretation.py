@@ -225,6 +225,8 @@ with tab5:
         "airbag_deployed": 0,
         "Age_x_NoSeatbelt": ages * 1,
         "Age_x_Airbag": ages * 0
+        "Time Group_Off-Peak": 0,
+        "Time Group_Peak Hours": 0
     })
 
     df_yes = pd.DataFrame({
@@ -234,6 +236,8 @@ with tab5:
         "airbag_deployed": 0,
         "Age_x_NoSeatbelt": ages * 0,
         "Age_x_Airbag": ages * 0
+        "Time Group_Off-Peak": 0,
+        "Time Group_Peak Hours": 0
     })
 
     pred_no = result.predict(df_no)
