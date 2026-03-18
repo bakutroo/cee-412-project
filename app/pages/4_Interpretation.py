@@ -273,7 +273,9 @@ with tab5:
             "no_seatbelt": 0,
             "airbag_deployed": airbag_deployed,
             "Age_x_NoSeatbelt": 0,
-            "Age_x_Airbag": ages * airbag_deployed
+            "Age_x_Airbag": ages * airbag_deployed,
+            "Time Group_Off-Peak": 0,
+            "Time Group_Peak Hours": 0
         })
 
     df_deployed = make_df(1)
