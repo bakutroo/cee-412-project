@@ -207,7 +207,7 @@ with tab4:
     "severity, and neither the Age × Seatbelt nor Age × Airbag interactions are "
     "statistically significant in this model. Although the coefficients for "
     "Age and the Age × Airbag interaction remain positive, their effects are overshadowed "
-    "by stronger predictors—particularly ejection and seatbelt non-use. Both off-peak "
+    "by stronger predictors, particularly ejection and seatbelt non-use. Both off-peak "
     "and peak-hour crashes have significantly lower odds of severe injury compared to "
     "nighttime crashes."
 )
