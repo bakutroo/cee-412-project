@@ -235,7 +235,7 @@ with tab5:
         "no_seatbelt": 0,
         "airbag_deployed": 0,
         "Age_x_NoSeatbelt": ages * 0,
-        "Age_x_Airbag": ages * 0
+        "Age_x_Airbag": ages * 0,
         "Time Group_Off-Peak": 0,
         "Time Group_Peak Hours": 0
     })
