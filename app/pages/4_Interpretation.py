@@ -182,7 +182,7 @@ with tab4:
         "Time Group_Off-Peak",
         "Time Group_Peak Hours",
         "Eject Desc_Totally Ejected",
-        "Eject Desc_Partically Ejected"
+        "Eject Desc_Partially Ejected"
     ]]
 
     X_lr = sm.add_constant(X_lr).astype(float)
@@ -230,7 +230,7 @@ with tab5:
         "Time Group_Off-Peak": 0,
         "Time Group_Peak Hours": 0,
         "Eject Desc_Totally Ejected": 0,
-        "Eject Desc_Partically Ejected": 0
+        "Eject Desc_Partially Ejected": 0
     })
 
     df_yes = pd.DataFrame({
@@ -243,7 +243,7 @@ with tab5:
         "Time Group_Off-Peak": 0,
         "Time Group_Peak Hours": 0,
         "Eject Desc_Totally Ejected": 0,
-        "Eject Desc_Partically Ejected": 0
+        "Eject Desc_Partially Ejected": 0
     })
 
     pred_no = result.predict(df_no)
