@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title("Exploratory Analysis")
+st.title("Exploratory Data Analysis")
 
 # Load the cleaned EDA dataset
 df_eda = pd.read_csv("app/data/cleaned_for_eda.csv")
